@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "929654238475",
+    "project_id": "bpgc-pawn-shop",
+    "storage_bucket": "bpgc-pawn-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929654238475:android:34467fcf1f5d7116e9860e",
+        "android_client_info": {
+          "package_name": "com.example.bpgc_pawn_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929654238475-rcjv5ucmsgbtenmd5vh431rl71f218o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA5erx9-YJ5U8vDJ1Gu0M__PK7Vmdsb4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929654238475-rcjv5ucmsgbtenmd5vh431rl71f218o8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "929654238475-5g113r4oisqho0gccmc5cl0fospasi4i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bpgcPawnShop.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
