@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "929654238475",
+    "firebase_url": "https://bpgc-pawn-shop-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "bpgc-pawn-shop",
     "storage_bucket": "bpgc-pawn-shop.appspot.com"
   },
@@ -14,7 +15,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "929654238475-rcjv5ucmsgbtenmd5vh431rl71f218o8.apps.googleusercontent.com",
+          "client_id": "929654238475-v95l0brq1dvov5vtnj5plu0b5lkpa4cu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

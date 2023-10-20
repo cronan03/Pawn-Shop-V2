@@ -1,4 +1,5 @@
 import 'package:bpgc_pawn_shop/pages/home_pg.dart';
+import 'package:firebase_core/firebase_core.dart';
 //import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -28,7 +29,7 @@ class _SellPage2State extends State<SellPage2> {
 
   @override
   void initState() {
-    submitProductData();
+    //submitProductData();
     super.initState();
     steps = [
       Step(
@@ -152,15 +153,24 @@ class _SellPage2State extends State<SellPage2> {
     //     'description': description,
     //     'isNegotiable': isNegotiable,
     //   });
-      DatabaseReference ref = FirebaseDatabase.instance.ref("cards");
+      //final FirebaseDatabase database = FirebaseDatabase(
+      //databaseURL: 'https://bpgc-pawn-shop-default-rtdb.asia-southeast1.firebasedatabase.app',
+//);
+      final firebaseApp = Firebase.app();
+      final rtdb = FirebaseDatabase.instanceFor(app: firebaseApp, databaseURL: 'https://bpgc-pawn-shop-default-rtdb.asia-southeast1.firebasedatabase.app');
+      //DatabaseReference ref = FirebaseDatabase.instance.ref("cards");
+      //DatabaseReference ref = rtdb.ref().child("cards");
+      //DatabaseReference card = ref.push();
 
-      await ref.set({
+
+      final card = <String, dynamic>{
         "title": title,
         "price": price,
         "description": description,
         "isNegotiable": isNegotiable,
         "email" : userEmail,
-      });
+      };
+      rtdb.ref().child("cards").push().set(card);
       
       showDialog(
         context: context,
